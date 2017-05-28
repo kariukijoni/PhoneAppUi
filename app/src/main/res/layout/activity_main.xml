@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kariuki.androiduidesign.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Program Registration System"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="38dp"
+        android:text="Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tv_reg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_name"
+        android:layout_alignRight="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginTop="37dp"
+        android:text="Reg No" />
+    <EditText
+        android:id="@+id/et_reg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_course"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_alignStart="@+id/et_name"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_reg"
+        android:layout_alignStart="@+id/tv_reg"
+        android:layout_below="@+id/tv_reg"
+        android:layout_marginTop="44dp"
+        android:text="Course" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_course"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rad_female"
+        android:layout_alignEnd="@+id/tv_course"
+        android:layout_alignRight="@+id/tv_course"
+        android:text="Gender" />
+
+    <RadioButton
+        android:id="@+id/rad_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:layout_below="@+id/spinner"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="F" />
+
+    <RadioButton
+        android:id="@+id/rad_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:text="M"
+        android:layout_alignBaseline="@+id/rad_female"
+        android:layout_alignBottom="@+id/rad_female"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"
+        android:layout_below="@+id/tv_gender"
+        android:layout_marginTop="46dp"
+        android:text="Continue"
+        android:layout_toStartOf="@+id/btn_cancel"
+        android:layout_toLeftOf="@+id/btn_cancel" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_continue"
+        android:text="Cancel"
+        android:layout_alignRight="@+id/rad_male"
+        android:layout_alignEnd="@+id/rad_male"
+        android:layout_toRightOf="@+id/rad_female"
+        android:layout_toEndOf="@+id/rad_female" />
+
+</RelativeLayout>
